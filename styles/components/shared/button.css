@@ -1,0 +1,17 @@
+.button {
+  cursor: pointer;
+  padding: 12px 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+
+  font-family: Lato, sans-serif;
+  font-size: 16px;
+}
+
+.button_dark {
+  background: #000000;
+  color: #ffffff;
+}

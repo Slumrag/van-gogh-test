@@ -1,0 +1,9 @@
+.nav-menu {
+  display: flex;
+  gap: 100px;
+  font-weight: 600;
+}
+
+.nav-menu__item {
+  text-transform: uppercase;
+}

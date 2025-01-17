@@ -1,0 +1,9 @@
+@import url('/public/fonts/Korataki/style.css');
+@import url('/public/fonts/Lato/style.css');
+@import url('./normalize.css');
+@import url('./reset.css');
+@import url('./variables.css');
+@import url('./components/shared/container.css');
+@import url('./components/shared/wrapper.css');
+@import url('./components/shared/button.css');
+@import url('./components/header/header.css');

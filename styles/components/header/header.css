@@ -1,0 +1,37 @@
+@import url('./top-bar.css');
+@import url('./nav-menu.css');
+@import url('./search-bar.css');
+@import url('./cart-button.css');
+
+.header-main {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  grid-template-rows: max-content 0;
+  grid-template-areas:
+    'left center right'
+    'center center center';
+  align-items: center;
+
+  position: relative;
+}
+
+.header-main nav {
+  grid-area: center;
+  align-self: center;
+  justify-self: center;
+  position: absolute;
+}
+
+.header-actions {
+  display: flex;
+  gap: 20px;
+  /* align-items: center; */
+  justify-content: end;
+  height: 39px;
+}
+
+.header-actions__search-bar {
+  max-width: 170px;
+}

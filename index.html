@@ -1,17 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test</title>
-  <link rel="stylesheet" href="styles/style.css">
+
+  <link
+    href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header class="header"></header>
+    <header>
+      <div class="top-bar">
+        <menu class="top-bar__menu container">
+          <li>
+            <a class="top-bar__menu-item" href="http://" target="_blank" rel="noopener noreferrer">Доставка и оплата</a>
+          </li>
+          <li>
+            <a class="top-bar__menu-item" href="http://" target="_blank" rel="noopener noreferrer">Гарантия и
+              возврат</a>
+          </li>
+          <li>
+            <a class="top-bar__menu-item" href="http://" target="_blank" rel="noopener noreferrer">EN</a>
+          </li>
+        </menu>
+      </div>
+      <div class="header-main container">
+
+        <a href="" class="logo"><img src="./public/svg/Logo.svg" alt="logo"></a>
+
+        <!---nav-menu -->
+        <nav>
+          <menu class="nav-menu">
+            <li>
+              <a href="" class="nav-menu__item">Каталог</a>
+            </li>
+            <li>
+              <a href="" class="nav-menu__item">О компании</a>
+            </li>
+            <li>
+              <a href="" class="nav-menu__item">Контакты</a>
+            </li>
+          </menu>
+        </nav>
+
+        <!---search-bar -->
+        <div class="header-actions">
+
+          <form action="" class="header-actions__search-bar search-bar">
+            <input type="search" class="search-bar__input" value="Лампы">
+            <button type="submit" class="button search-bar__icon">
+              <img src="./public/svg/search-normal.svg" alt="search icon">
+            </button>
+          </form>
+
+          <!---cart-button -->
+          <button class="button button_dark cart-button">
+            <div class="cart-button__icon">
+              <img src="./public/svg/Bag.svg" alt="bag icon">
+              <div class="cart-button__item-counter">3</div>
+            </div>
+            <span class="cart-button__text">Корзина</span>
+          </button>
+
+        </div>
+      </div>
+    </header>
     <main class="main"></main>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quasi vitae, quod quas quis perspiciatis veniam
+    illum totam ducimus ad ex quam aut facilis, mollitia accusantium eius id minima cumque.
     <footer class="footer"></footer>
   </div>
 
