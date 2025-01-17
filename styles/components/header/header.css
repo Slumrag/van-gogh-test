@@ -2,6 +2,8 @@
 @import url('./nav-menu.css');
 @import url('./search-bar.css');
 @import url('./cart-button.css');
+@import url('../shared/hidden.css');
+@import url('./burger.css');
 
 .header-main {
   padding-top: 12px;
@@ -27,11 +29,33 @@
 .header-actions {
   display: flex;
   gap: 20px;
-  /* align-items: center; */
   justify-content: end;
+  align-items: center;
   height: 39px;
 }
 
 .header-actions__search-bar {
   max-width: 170px;
+}
+
+.header-logo {
+  display: flex;
+  object-fit: contain;
+}
+
+@media (max-width: 1400px) {
+  .cart-button,
+  .header-actions__search-bar,
+  .nav-menu,
+  .top-bar {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .header-logo {
+    height: 36px;
+  }
 }
