@@ -43,6 +43,26 @@
   object-fit: contain;
 }
 
+@media (max-width: 1599px) {
+  .search-bar {
+    padding: 0;
+    border: none;
+  }
+
+  .search-bar .search-bar__submit {
+    background: var(--bg-accent);
+    padding: 0;
+  }
+
+  .search-bar .search-bar__submit img {
+    filter: invert();
+  }
+
+  .search-bar .search-bar__input {
+    display: none;
+  }
+}
+
 @media (max-width: 1400px) {
   .cart-button,
   .header-actions__search-bar,

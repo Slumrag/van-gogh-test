@@ -1,5 +1,6 @@
 .search-bar {
   padding-left: 21px;
+  padding-right: 8px;
   border: 1px solid #f5f5f5;
   border-radius: 88px;
 
@@ -15,8 +16,26 @@
   width: 100%;
 }
 
-.search-bar__icon {
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-right: 13px;
+.search-bar__submit {
+  padding: 0;
+  width: 39px;
+  height: 39px;
+}
+
+.search-bar_collapsed {
+  padding: 0;
+  border: none;
+}
+
+.search-bar_collapsed .search-bar__submit {
+  background: var(--bg-accent);
+  padding: 0;
+}
+
+.search-bar_collapsed .search-bar__submit img {
+  filter: invert();
+}
+
+.search-bar_collapsed .search-bar__input {
+  display: none;
 }
