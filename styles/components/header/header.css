@@ -6,21 +6,19 @@
 @import url('./burger.css');
 
 .header-main {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  /* padding-top: 12px;
+  padding-bottom: 12px; */
+  height: 80px;
   display: grid;
-  grid-template-columns: min-content 1fr max-content;
-  grid-template-rows: max-content 0;
-  grid-template-areas:
-    'left center right'
-    'center center center';
-  align-items: center;
-
+  grid-template-columns: min-content 1fr min-content;
+  grid-template-rows: max-content;
+  grid-template-areas: 'nav nav nav';
+  align-content: center;
   position: relative;
 }
 
 .header-main nav {
-  grid-area: center;
+  grid-area: nav;
   align-self: center;
   justify-self: center;
   position: absolute;
@@ -43,7 +41,7 @@
   object-fit: contain;
 }
 
-@media (max-width: 1599px) {
+@media (max-width: 1601px) {
   .search-bar {
     padding: 0;
     border: none;
@@ -63,7 +61,19 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1024px) {
+  .nav-menu {
+    gap: 50px;
+  }
+  .header-logo {
+    height: 36px;
+  }
+  .cart-button__text {
+    display: none;
+  }
+}
+
+@media (max-width: 771px) {
   .cart-button,
   .header-actions__search-bar,
   .nav-menu,
@@ -74,8 +84,15 @@
   .burger {
     display: block;
   }
-
-  .header-logo {
+  .header-main {
+    height: 60px;
+  }
+  /* .header-logo {
     height: 36px;
+  } */
+}
+@media (max-width: 426px) {
+  .header-main {
+    height: 56px;
   }
 }
