@@ -1,0 +1,23 @@
+@import url('./card.css');
+
+.search-results {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  flex-direction: column;
+  row-gap: 40px;
+}
+
+.search-results__title {
+  font-family: Korataki;
+  font-size: 44px;
+  line-height: 1.4;
+  color: var(--bg-accent);
+  justify-self: left;
+}
+
+.search-results__display {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 320px));
+  grid-template-rows: 1fr;
+  gap: 60px 40px;
+}

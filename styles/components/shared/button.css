@@ -15,3 +15,8 @@
   background: #000000;
   color: #ffffff;
 }
+
+.button_primary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
