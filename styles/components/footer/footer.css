@@ -1,0 +1,106 @@
+.footer-bg {
+  background: var(--bg-dark);
+}
+
+.footer {
+  color: var(--text-color-light-100);
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: fit-content fit-content;
+  grid-template-areas:
+    'logo address services legal'
+    'policy contacts services payment';
+  gap: 30px 0px;
+  /* justify-content: center; */
+
+  position: relative;
+  line-height: 1;
+}
+
+.footer__section {
+  /* row-gap: 20px; */
+}
+
+.footer__section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer__section-content {
+  font-style: normal;
+}
+
+.footer__logo {
+  grid-area: logo;
+  height: 62px;
+  filter: grayscale(100%) invert(1) brightness(200%);
+}
+
+.footer__policy {
+  grid-area: policy;
+  align-self: end;
+  color: var(--text-color-light-50);
+  font-family: Roboto;
+  line-height: 1.3;
+}
+
+.footer__policy a {
+  text-decoration: underline;
+}
+
+.footer__address {
+  grid-area: address;
+  /* justify-self: center; */
+}
+
+.footer__contacts {
+  grid-area: contacts;
+  /* justify-self: center; */
+}
+
+.footer__address,
+.footer__contacts {
+  margin-left: 80px;
+}
+
+.footer__contacts .footer__section-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
+.footer__services {
+  grid-area: services;
+  margin-left: 125px;
+}
+
+.footer__services .footer__section-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.footer__legal {
+  line-height: 1.4;
+  grid-area: legal;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  row-gap: 20px;
+  color: var(--text-color-light-50);
+}
+
+.footer__payment-options {
+  grid-area: payment;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  column-gap: 33px;
+  margin-top: 10px;
+}
