@@ -6,24 +6,26 @@
 .burger-icon {
   width: 24px;
   height: 12px;
+  display: block;
   position: relative;
 }
 
-.burger-icon div {
+.burger-icon span {
   position: absolute;
+  display: block;
   width: 100%;
   height: 2px;
   background: #0d0b26;
 }
 
-.burger-icon div:nth-child(1) {
+.burger-icon span:nth-child(1) {
   top: 0;
 }
 
-.burger-icon div:nth-child(2) {
+.burger-icon span:nth-child(2) {
   top: calc(50% - 1px);
 }
 
-.burger-icon div:nth-child(3) {
+.burger-icon span:nth-child(3) {
   bottom: 0;
 }

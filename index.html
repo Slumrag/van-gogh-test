@@ -23,17 +23,18 @@
       <div class="top-bar">
         <menu class="top-bar__menu container">
           <li>
-            <a class="top-bar__menu-item" href="http://" target="_blank" rel="noopener noreferrer">Доставка и оплата</a>
+            <a class="top-bar__menu-item" href="." target="_blank" rel="noopener noreferrer">Доставка и оплата</a>
           </li>
           <li>
-            <a class="top-bar__menu-item" href="http://" target="_blank" rel="noopener noreferrer">Гарантия и
+            <a class="top-bar__menu-item" href="." target="_blank" rel="noopener noreferrer">Гарантия и
               возврат</a>
           </li>
           <li>
-            <a class="top-bar__menu-item" href="http://" target="_blank" rel="noopener noreferrer">EN</a>
+            <a class="top-bar__menu-item" href="." target="_blank" rel="noopener noreferrer">EN</a>
           </li>
         </menu>
       </div>
+
       <div class="header-main container">
 
         <a href="" class="header-logo"><img src="./public/svg/Logo.svg" alt="logo"></a>
@@ -53,10 +54,9 @@
           </menu>
         </nav>
 
-        <!---search-bar -->
         <div class="header-actions">
-
-          <form action="" class="header-actions__search-bar search-bar ">
+          <!---search-bar -->
+          <form action="none" class="header-actions__search-bar search-bar ">
             <input type="search" class="search-bar__input" value="Лампы">
             <button type="submit" class="button search-bar__submit">
               <img src="./public/svg/search-normal.svg" alt="search icon">
@@ -65,23 +65,27 @@
 
           <!---cart-button -->
           <button class="button button_dark cart-button">
-            <div class="cart-button__icon">
+            <span class="cart-button__icon">
               <img src="./public/svg/Bag.svg" alt="bag icon">
-              <div class="cart-button__item-counter">3</div>
-            </div>
+              <span class="cart-button__item-counter">3</span>
+            </span>
             <span class="cart-button__text">Корзина</span>
           </button>
 
+          <!-- burger -->
           <button class="button burger">
+            <span class="burger-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </button>
 
-            <div class="burger-icon">
-              <div></div>
-              <div></div>
-              <div></div>
-            </div>
         </div>
 
       </div>
+
+
     </header>
 
 
@@ -310,6 +314,7 @@
 
       </div>
     </footer>
+
   </div>
 
 </body>
