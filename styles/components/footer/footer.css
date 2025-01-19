@@ -21,7 +21,6 @@
     'logo . address  . services . legal'
     'policy . contacts . services . payment';
   gap: 30px 0px;
-  /* justify-content: center; */
 
   position: relative;
   line-height: 1;
@@ -77,7 +76,6 @@
 
 .footer__services {
   grid-area: services;
-  /* margin-left: 125px; */
 }
 
 .footer__services .footer__section-content {
@@ -122,19 +120,6 @@
 
 @media (max-width: 1024px) {
   .footer {
-    grid-template-columns:
-      minmax(min-content, 322px)
-      0.4fr
-      minmax(max-content, 1fr)
-      0.4fr
-      minmax(max-content, 1fr)
-      0.4fr
-      minmax(max-content, 1fr);
-  }
-}
-
-@media (max-width: 771px) {
-  .footer {
     padding-top: 50px;
     padding-bottom: 50px;
     grid-template-columns: min-content 1fr max-content;
@@ -169,7 +154,7 @@
   }
 }
 
-@media (max-width: 426px) {
+@media (max-width: 688px) {
   .footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -201,5 +186,9 @@
   .footer__payment-options {
     justify-self: start;
     margin-top: 36px;
+  }
+  .footer__policy {
+    justify-self: start;
+    max-width: none;
   }
 }
